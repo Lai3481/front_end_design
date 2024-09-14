@@ -1,0 +1,35 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+}
+/* css注释 */
+/* div {
+  color: green;
+}
+p {
+  color: green;
+}
+strong {
+  color: green;
+}
+span {
+  color: green;
+} */
+
+/* * {
+  color: green;
+} */
+
+.laoda {
+  color: blueviolet;
+}
+.kobe {
+  /* 黑色 0 0 0 */
+  /* 白色 255 255 255 */
+  /* 89, 176, 149 */
+  color: rgba(89, 176, 149);
+}
+#p2 {
+  color: violet;
+}
