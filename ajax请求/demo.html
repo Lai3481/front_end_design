@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 992px;
+        height: 614px;
+        background-color: skyblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin: 0 auto;
+      }
+      .item {
+        width: 234px;
+        height: 300px;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item">
+        <img src="" alt="" />
+        <div class="text">苹果15</div>
+      </div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <script>
+      var res = undefined;
+      var xhr = new XMLHttpRequest();
+      xhr.open("get", "https://myajax.usemock.com/shop_list");
+      //   get方式可以省略请求头设置
+      xhr.send();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          //请求成功
+          console.log(JSON.parse(xhr.response));
+          res = JSON.parse(xhr.response);
+          console.log(res);
+          render(res);
+        }
+      };
+
+      function render(res) {
+        console.log(res);
+        var str = ``;
+        for (let i = 0; i < res.data.length; i++) {
+          console.log(i);
+          str += `<div class="item">
+              <img src="${res.data[i].img}" alt="" />
+              <div class="text">${res.data[i].name}</div>
+             </div>`;
+          console.log(str);
+        }
+        document.querySelector(".box").innerHTML = str;
+      }
+    </script>
+  </body>
+</html>

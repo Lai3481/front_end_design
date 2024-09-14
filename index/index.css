@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  background-image: url(../03.课程素材/images/index/background.jpg);
+}
+.banner {
+  width: 100%;
+  height: 935px;
+  background-image: url(../03.课程素材/images/index/index-banner.jpg);
+}
+.nav-box {
+  width: 100%;
+  height: 95px;
+  background-color: rgba(102, 102, 102, 0.9);
+  display: flex;
+  align-items: center;
+}
+.logo-box {
+  width: 360px;
+  height: 95px;
+  background-color: white;
+  border-bottom-right-radius: 45px;
+  background-image: url(../03.课程素材/images/index/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nav-list {
+  width: 630px;
+  height: 37px;
+  display: flex;
+  margin-left: 460px;
+}
+.list-item {
+  width: 105px;
+  height: 37px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 37px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+.list-item:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.main {
+  width: 1200px;
+  /* height: 1000px; */
+
+  margin: 0 auto;
+  margin-top: 62px;
+}
+.welcome-box {
+  width: 100%;
+  height: 460px;
+
+  display: flex;
+}
+.wb-left {
+  width: 525px;
+  height: 100%;
+}
+.wb-right {
+  width: 675px;
+  height: 100%;
+  background-color: tomato;
+  background-image: url(../03.课程素材/images/index/index-img.jpg);
+  border-bottom: 5px solid #16b685;
+  background-position: 0 -10px;
+}
+.wlimg-box {
+  width: 240px;
+  height: 50px;
+  background-image: url(../03.课程素材/images/index/welcome.png);
+  margin-bottom: 60px;
+  color: #333;
+}
+.server-box {
+  width: 100%;
+  height: 297px;
+
+  margin-bottom: 90px;
+  margin-top: 55px;
+}
+.ts {
+  background-image: url(../03.课程素材/images/index/service.png);
+}
+.server-content-box {
+  height: 204px;
+  display: flex;
+  justify-content: space-between;
+}
+.scb-item {
+  width: 295px;
+  height: 100%;
+  background-image: url(../03.课程素材/images/index/service-background.jpg);
+  position: relative;
+}
+.mask {
+  width: 100%;
+  height: 62px;
+  background-color: rgba(6, 144, 101, 0.9);
+  position: absolute;
+  bottom: 0;
+}
+.bottom {
+  font-size: 12px;
+  color: white;
+  margin-left: 11px;
+}
+.top {
+  font-size: 20px;
+  color: white;
+  margin-top: 8px;
+  margin-left: 11px;
+}
+.footer {
+  width: 100%;
+  height: 112px;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #dfdfdf;
+  background-image: url(../03.课程素材/images/index/bottom-logo.png);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+}
+.footer-text {
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  line-height: 51px;
+  height: 51px;
+  background-color: #f3f3f3;
+}
