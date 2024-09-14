@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .ts {
+        width: 900px;
+        height: 900px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="">00000</a>
+    </div>
+    <button class="btn1">点我试试</button>
+    <button class="btn2">点我变回去</button>
+    <a href="">11111</a>
+    <a href="">22222</a>
+    <a href="">33333</a>
+    <script>
+      console.log(document);
+      //  document是页面本身,并且他是一个对象
+      var div = document.querySelector("div");
+      //   获取到div的dom节点
+
+      //   加上点击事件
+      div.onclick = function () {
+        // div.style.width = "900px";
+        // div.style.height = "900px";
+        // div.style.backgroundColor = "skyblue";
+        window.location.href = "https://www.baidu.com";
+      };
+
+      var btn1 = document.querySelector(".btn1");
+      btn1.onclick = function () {
+        // 给div添加ts类名
+        div.classList.add("ts");
+      };
+
+      var as = document.querySelectorAll("a");
+      console.log(as);
+
+      var btn2 = document.querySelector(".btn2");
+      btn2.onclick = function () {
+        // 给div删除ts类名
+        div.classList.remove("ts");
+      };
+    </script>
+  </body>
+</html>

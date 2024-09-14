@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // if && if...else
+      //   var age = prompt("你多大了？");
+      //   if (age >= 18) {
+      //     alert("赶紧上号");
+      //   } else {
+      //     alert("滚回去写作业！");
+      //   }
+
+      //   for循环
+      for (var i = 0; i < 5; i++) {
+        // 循环体
+        console.log(i);
+      }
+
+      var sum = 0;
+      for (var i = 1; i <= 100; i++) {
+        sum = sum + i;
+      }
+      console.log(sum);
+
+      //   数组
+      var arr = [100, "20", undefined, null, [0, 0, [1, 1]]];
+      //   数组下标:用来访问数组元素的序号（数组下标从 0 开始）
+      var res = arr[2];
+      console.log(res);
+      console.log(arr[4]);
+      console.log(arr);
+      //   数组长度:指的是数组当中的数组元素的个数。
+      var length = arr.length;
+      console.log(length);
+
+      var arr1 = [
+        10,
+        20,
+        30,
+        40,
+        1651,
+        874,
+        894,
+        41,
+        65,
+        7,
+        6,
+        51,
+        651,
+        65,
+        1,
+        7,
+        9,
+        4,
+        6,
+        1,
+        ,
+        9,
+        1,
+        ,
+        7,
+        9,
+        1,
+      ];
+      console.log(arr1[3]);
+      console.log(arr1.length - 1);
+      console.log(arr1[arr1.length - 1]);
+
+      //   对象
+      var obj = {
+        name: "大司马",
+        age: 30,
+      };
+      console.log(obj);
+      console.log(obj.name);
+      console.log(obj.age);
+
+      //   函数
+      function hello() {
+        // 函数体
+        console.log("大家好！");
+      }
+      //   调用函数
+      hello();
+    </script>
+  </body>
+</html>

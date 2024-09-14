@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 行内式JavaScript -->
+    <!-- <div onclick="alert('点你咋地！？')">点我试试</div> -->
+
+    <!-- 内联式 -->
+    <div class="ts">点我试试</div>
+    <div class="ts">点我试试</div>
+    <div class="ts">点我试试</div>
+    <div class="ts">点我试试</div>
+    <div class="ts">点我试试</div>
+    <div class="ts">点我试试</div>
+    <script>
+      //  获取dom节点
+      /*
+        多行注释
+      */
+      //   let / var 声明变量
+      //   document指的是整个页面
+      console.log(document);
+      //   获取class叫ts的元素的dom节点
+      let div = document.querySelector(".ts");
+      let divs = document.querySelectorAll(".ts");
+      console.log(div);
+      console.log(divs);
+      divs[1].style.width = "500px";
+      //    添加点击事件
+      div.onclick = function () {
+        alert("点你咋地！？");
+      };
+
+
+    //   
+    </script>
+  </body>
+</html>
