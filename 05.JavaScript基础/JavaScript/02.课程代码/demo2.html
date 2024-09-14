@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+       1.变量: var 申明变量 ，let 申明变量 ;var声明的变量可以重名，并且进行覆盖；let则不行。
+    -->
+    <script>
+      // 这个就是单行注释
+      /*
+         这个就是多行注释
+         这个就是多行注释
+         这个就是多行注释
+         这个就是多行注释
+         这个就是多行注释
+      */
+
+      var name = "张三"; //结束之后打上分号
+      var name = "李四";
+      let age = 50;
+      //   let age = 55;
+      console.log(name); // 李四
+      console.log(age);
+
+      var _________ = 999; // 可以但是不道德
+      var username = "999";
+
+      //=== 全等 ，  == 判等 （===不光要判断值还要判断数据类型，而==只判断值）
+      var res = 10 == "10"; // 10 == 10 ,true
+      console.log(res);
+      var res2 = 10 === "10";
+      console.log(res2);
+
+      var res = 10 == "10a"; // 10 == NaN 非数字 Not a Number
+      console.log(typeof NaN);
+
+      //if单分支
+      let youAge = prompt("请输入你的年纪");
+      if (youAge > 18 || youAge == 18) {
+        alert("年纪正确可以上网");
+      } else {
+        alert("滚回去学习");
+      }
+
+      //for循环
+      for (let i = 0; i < 5; i++) {
+        console.log(i);
+      }
+
+      //   求1-100的所有整数的和
+      let sum = 0;
+      for (let i = 1; i <= 100; i++) {
+        console.log(i);
+        sum += i;
+      }
+      console.log(sum);
+    </script>
+  </body>
+</html>
